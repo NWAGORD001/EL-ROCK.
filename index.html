@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EL-ROCK | Learn Skills. Get Certified. Get Jobs</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{line-height:1.6;color:#222}
+header{background:#0a1d37;color:#fff;text-align:center;padding:25px}
+.hero{background:linear-gradient(to right,#0a1d37,#1e3c72);color:#fff;text-align:center;padding:70px 20px}
+.hero a{display:inline-block;margin-top:20px;padding:12px 25px;background:#ff9800;color:#fff;text-decoration:none;border-radius:5px}
+section{padding:60px 20px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:1000px;margin:auto}
+.card{background:#f4f4f4;padding:25px;border-radius:10px;font-weight:bold}
+.rating{margin-top:15px;font-size:22px;color:#ffb400}
+form{max-width:500px;margin:auto;display:flex;flex-direction:column}
+input,select,textarea{margin:10px 0;padding:12px;border-radius:5px;border:1px solid #ccc}
+button{background:#0a1d37;color:#fff;border:none;padding:14px;border-radius:5px;cursor:pointer}
+footer{background:#0a1d37;color:#fff;text-align:center;padding:15px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>EL-ROCK</h1>
+<p>Learn Skills • Earn Certificates • Get Job-Ready</p>
+</header>
+
+<section class="hero">
+<h2>Build Skills That Pay</h2>
+<p>Learn in-demand skills, earn certificates, and prepare for real job opportunities.</p>
+<div class="rating">★★★★★ 5.0 Rated by Learners</div>
+<a href="#contact">Enroll Now</a>
+</section>
+
+<section>
+<h2>Popular Skills</h2>
+<div class="grid">
+<div class="card">Web Development</div>
+<div class="card">Digital Marketing</div>
+<div class="card">Data Analysis</div>
+<div class="card">Graphic Design</div>
+<div class="card">Finance & Trading</div>
+<div class="card">Personal Development</div>
+</div>
+</section>
+
+<section>
+<h2>Certificates & Jobs</h2>
+<p>Complete courses and receive certificates recognized by employers.  
+We focus on practical skills that lead to real job opportunities.</p>
+</section>
+
+<section id="contact">
+<h2>Enroll / Contact Us</h2>
+
+<!-- NETLIFY FORM -->
+<form name="elrock-form" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="elrock-form">
+
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+
+<select name="skill" required>
+<option value="">Select Skill</option>
+<option>Web Development</option>
+<option>Digital Marketing</option>
+<option>Data Analysis</option>
+<option>Graphic Design</option>
+<option>Finance</option>
+</select>
+
+<textarea name="message" placeholder="Your Message"></textarea>
+<button type="submit">Submit</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 EL-ROCK. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
